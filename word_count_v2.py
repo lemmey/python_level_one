@@ -11,11 +11,6 @@ import csv
 import re
 from pathlib import Path
 
-# Ask USER data folder & file name
-FOLDER_NAME = input('Enter the data folder name:\n')
-USER_FILENAME = input('Enter the full filename:\n')
-MODE = input('Enter the action (write/show):\n')
-OUTPUT = input('Enter the output (.csv) filename:\n')
 
 def word_count(filename, folder, mode, output_name):
     try:
@@ -62,4 +57,8 @@ def word_count(filename, folder, mode, output_name):
 
 
 if __name__ == '__main__':
+    FOLDER_NAME = input('Enter the data folder name:\n')
+    USER_FILENAME = input('Enter the full filename:\n')
+    MODE = input('Enter the action (write/show):\n')
+    OUTPUT = input('Enter the output (.csv) filename:\n')
     word_count(USER_FILENAME, FOLDER_NAME, MODE, OUTPUT)
