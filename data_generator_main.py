@@ -107,7 +107,7 @@ def frame_data(size, ints, floats, strings):
 def exp_csv(filename, df_main):
     df_main.to_csv(filename, index=False)
     logging.info(f'File was saved as {filename}')
-    #1 Where was it saved
+    #1 TODO Add user dialog: file was saved at this location
     
 
 # MAIN
@@ -124,13 +124,13 @@ def main():
     UI_unique = int(input('Please enter a sample size\n>'))
     
     size = unique_col(UI_unique)
-    #2 Do you want to add? (y/n)
+    #2 TODO Add user dialog: do you want to add? (y/n)
     UI_int_start, UI_int_end = input(
         '''Please enter an integer start and a stop value separated by a space
         \n>''').split()
     
     ints = int_col(int(UI_int_start), int(UI_int_end), UI_unique)
-    #2.5 Floats rounded by ?
+    #2.5 TODO Optional: generated floats to be rounded by ...
     UI_flt_start, UI_flt_end = input(
         '''Please enter an integer start and a stop value separated by a space
         \n>''').split()
