@@ -145,7 +145,7 @@ def main():
     
     df_main = frame_data(size, ints, floats, strings)
     
-    #3 Show/export or both/index y/n
+    #3 TODO Add functionality: Choice (Show, export or both) / add index y/n
     
     action = input('''Please enter action (show/export)
                    \n>''')
@@ -164,7 +164,7 @@ def main():
 
 # RUN
 if __name__ == '__main__':
-    #4 info()
-    #5 user bugproof
-    #6 increase usability/feedback
+    #4 TODO add user app info()
+    #5 TODO bugproof app for invalid/faulty user input
+    #6 TODO increase/add usability/app feedback to user
     main()
