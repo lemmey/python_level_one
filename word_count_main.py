@@ -1,5 +1,5 @@
 '''Summary:
-Small program to extract unique words and their frequencies from a .txt file
+Extract unique words and their frequencies from a .txt file
  
 Python 3.10.10 64-bit
 Juli/2024 
